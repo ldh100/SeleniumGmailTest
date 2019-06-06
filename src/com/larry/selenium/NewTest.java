@@ -8,9 +8,11 @@ import org.testng.annotations.BeforeClass;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
@@ -43,19 +45,29 @@ public class NewTest {
 	}
 	@Test
 	public void Test() {
-		String baseUrl = "https://www.google.com/";
+		String baseUrl = "https://accounts.google.com/signin";
+		String accountName ="versapay.qa.test@gmail.com";
+		String password = "iLoveApples";
         driver.get(baseUrl);
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.findElement(By.id("kw")).sendKeys("testNG");
-        driver.findElement(By.id("su")).click();
+        WebDriverWait wait=new WebDriverWait(driver, 20);
+        driver.findElement(By.id("identifierId")).sendKeys(accountName, Keys.ENTER);                       
+        //  driver.findElement(By.xpath("//span[@class='RveJvd snByac']")).click();         
+
+        //driver.findElement(By.xpath("//input[@class='whsOnd zHQkBf']")).sendKeys(password,Keys.ENTER);             
+        driver.findElement(By.xpath(".//*[@id='password']/div[1]/div/div[1]/input")).sendKeys(password);
+          driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);    
+         
+          driver.findElement(By.xpath("//span[@class='RveJvd snByac']")).click();
 		
 	}
 
 	@AfterClass
 	public void afterClass() {
 
-        driver.close();
-        driver.quit();
+       // driver.close();
+       // driver.quit();
 	}
 
 	@BeforeTest
