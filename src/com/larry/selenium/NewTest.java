@@ -51,7 +51,7 @@ public class NewTest {
         driver.get(baseUrl);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        WebDriverWait wait=new WebDriverWait(driver, 20);
+        //WebDriverWait wait=new WebDriverWait(driver, 20);
         driver.findElement(By.id("identifierId")).sendKeys(accountName, Keys.ENTER);                       
         //  driver.findElement(By.xpath("//span[@class='RveJvd snByac']")).click();         
 
