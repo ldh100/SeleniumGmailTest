@@ -2,63 +2,35 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5800" started-at="2019-06-06T17:49:48Z" finished-at="2019-06-06T17:49:54Z">
+  <suite name="Default suite" duration-ms="19237" started-at="2019-06-07T02:07:19Z" finished-at="2019-06-07T02:07:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5800" started-at="2019-06-06T17:49:48Z" finished-at="2019-06-06T17:49:54Z">
+    <test name="Default test" duration-ms="19237" started-at="2019-06-07T02:07:19Z" finished-at="2019-06-07T02:07:39Z">
       <class name="com.larry.selenium.NewTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="beforeSuite" is-config="true" duration-ms="5" started-at="2019-06-06T17:49:48Z" finished-at="2019-06-06T17:49:48Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="beforeSuite" is-config="true" duration-ms="6" started-at="2019-06-07T02:07:19Z" finished-at="2019-06-07T02:07:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-06-06T17:49:48Z" finished-at="2019-06-06T17:49:48Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="beforeTest" is-config="true" duration-ms="1" started-at="2019-06-07T02:07:19Z" finished-at="2019-06-07T02:07:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="beforeClass" is-config="true" duration-ms="2729" started-at="2019-06-06T17:49:48Z" finished-at="2019-06-06T17:49:51Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="beforeClass" is-config="true" duration-ms="2708" started-at="2019-06-07T02:07:19Z" finished-at="2019-06-07T02:07:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="Test()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="Test" duration-ms="3060" started-at="2019-06-06T17:49:51Z" finished-at="2019-06-06T17:49:54Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method status="FAIL" signature="Test()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="Test" duration-ms="13890" started-at="2019-06-07T02:07:22Z" finished-at="2019-06-07T02:07:36Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=75.0.3770.80)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'LDH100-THINKPAD', ip: '192.168.2.247', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\iamld\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61927}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
-Session ID: 433c92cfafc4644b18c338cc82ba12e2]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=75.0.3770.80)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'LDH100-THINKPAD', ip: '192.168.2.247', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\iamld\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61927}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
-Session ID: 433c92cfafc4644b18c338cc82ba12e2
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at com.larry.selenium.NewTest.Test(NewTest.java:65)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.larry.selenium.NewTest.Test(NewTest.java:74)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -86,27 +58,27 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-06-06T17:49:51Z" finished-at="2019-06-06T17:49:51Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-06-07T02:07:22Z" finished-at="2019-06-07T02:07:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-06-06T17:49:54Z" finished-at="2019-06-06T17:49:54Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-06-07T02:07:36Z" finished-at="2019-06-07T02:07:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-06-06T17:49:54Z" finished-at="2019-06-06T17:49:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-06-06T17:49:54Z" finished-at="2019-06-06T17:49:54Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="afterClass" is-config="true" duration-ms="2622" started-at="2019-06-07T02:07:36Z" finished-at="2019-06-07T02:07:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="afterSuite" is-config="true" duration-ms="0" started-at="2019-06-06T17:49:54Z" finished-at="2019-06-06T17:49:54Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-06-07T02:07:39Z" finished-at="2019-06-07T02:07:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.larry.selenium.NewTest@7dc7cbad]" name="afterSuite" is-config="true" duration-ms="0" started-at="2019-06-07T02:07:39Z" finished-at="2019-06-07T02:07:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
